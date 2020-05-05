@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>db_delete_contacts</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7d7f5006-5a96-4fc5-9795-84c119de0701</testCaseGuid>
+</TestCaseEntity>
