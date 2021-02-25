@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>//ul[@id='one-login-topmenu']/li[2]/a</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>/html/body/div[3]/div/div/div/div/span[1]/div/div/div[2]/div/div/ul/li[2]/a</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -20,14 +24,14 @@
       <value>a</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>href</name>
       <type>Main</type>
       <value>/ConnectedContactLogin?contact=userautomationnidfg</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
@@ -35,11 +39,11 @@
              userautomationnidfg</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;one-login-topmenu&quot;)/li[@class=&quot;item hover&quot;]/a[1]</value>
+      <value>/html/body/div[3]/div/div/div/div/span[1]/div/div/div[2]/div/div/ul/li[2]/a</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>

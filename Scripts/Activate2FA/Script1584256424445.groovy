@@ -167,12 +167,26 @@ WebUI.setText(findTestObject('Object Repository/Page_Mijn Tele2 Zakelijk/input_V
 
 WebUI.click(findTestObject('Object Repository/Page_Mijn Tele2 Zakelijk/input_VOOR ZAKELIJK_login-button'))
 
+WebUI.delay(2)
 WebUI.takeScreenshot()
 
-String otp = CustomKeywords.'mc2_uat_otp.mc2_uat_otp_db.connection'('jdbc:oracle:thin:@//nott.corp.tele2.com:1521/sdtest', 
-    'MC2_UAT_DATA', 'test')
+WebUI.delay(15)
 
+
+
+String otp = CustomKeywords.'mc2_uat_otp.mc2_uat_otp_db.connection'('jdbc:oracle:thin:@//nott.corp.tele2.com:1521/sdtest', 
+  'MC2_UAT_DATA', 'test')
+
+//temporary db
+
+//String otp = CustomKeywords.'mc2_uat_otp.mc2_uat_otp_db.connection'('jdbc:oracle:oci:@//pcadb-mc2-p.corp.tele2.com:1522:mc2prf',
+  //'MC2_UAT_DATA', 'test')
+//jdbc:oracle:oci:@//localhost:1521:SID
+
+WebUI.delay(15)
 println(otp)
+
+
 
 WebUI.setText(findTestObject('Object Repository/password/Page_Mijn Tele2 Zakelijk/OTPcode'), otp)
 

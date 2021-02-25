@@ -36,7 +36,7 @@ WebUI.click(findTestObject('Object Repository/Page_Customer Assignment/a_Account
 
 WebUI.click(findTestObject('Object Repository/Page_My Tele2 Business - Accounts Overview/td_900154467'))
 
-WebUI.waitForPageLoad(5)
+WebUI.waitForPageLoad(10)
 
 WebUI.click(findTestObject('Object Repository/Page_My Tele2 Business - Account Details/a_See News Messages_checkbox unchecked'))
 

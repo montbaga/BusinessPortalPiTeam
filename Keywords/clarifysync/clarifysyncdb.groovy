@@ -28,25 +28,25 @@ import groovy.sql.Sql
 
 
 public class clarifysyncdb {
-	
+
 	@Keyword
-	
-		public List<String> connection(String url, String user, String password){
-			def sqlConnection = Sql.newInstance(url,user,password)
-			List<String> value = new ArrayList<>()
-	
-			sqlConnection.eachRow("select CLARIFY_CONTACT_OBJID  from contacts order by id desc fetch first 1 rows only") { row ->
-				
-				//println(row [0])
-				value.add(row [0])
-			}
-			
-			sqlConnection.eachRow("select CLARIFY_CONTACT_OBJID  from contacts order by id asc fetch first 1 rows only") { row ->
-				
-				//println(row [0])
-				value.add(row [0])
-			}
-			println(value)
-			return(value)
-}
+
+	public List<String> connection(String url, String user, String password){
+		def sqlConnection = Sql.newInstance(url,user,password)
+		List<String> value = new ArrayList<>()
+
+		sqlConnection.eachRow("select CLARIFY_CONTACT_OBJID  from contacts order by id desc fetch first 1 rows only") { row ->
+
+			//println(row [0])
+			value.add(row [0])
+		}
+
+		sqlConnection.eachRow("select CLARIFY_CONTACT_OBJID  from contacts order by id asc fetch first 1 rows only") { row ->
+
+			//println(row [0])
+			value.add(row [0])
+		}
+		println(value)
+		return(value)
+	}
 }

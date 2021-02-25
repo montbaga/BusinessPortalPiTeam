@@ -38,7 +38,7 @@ if (WebUI.verifyElementClickable(findTestObject('Object Repository/Page_My Profi
 }
 
 WebUI.scrollToPosition(50, 60)
-WebUI.delay(10)
+WebUI.delay(15)
 
 WebUI.verifyTextPresent('Diensten', true)
 
@@ -47,7 +47,7 @@ println('Dutch Language is PASSED')
 WebUI.takeScreenshot()
 
 if (WebUI.verifyElementVisible(findTestObject('Object Repository/NLredtickenabled'))) {
-    WebUI.click(findTestObject('iframeEN'))
+    WebUI.click(findTestObject('Object Repository/iframeEN'))
 } else {
     println('iframeEN failed')
 }
@@ -60,7 +60,7 @@ if (WebUI.verifyElementClickable(findTestObject('Object Repository/span_Opslaan'
 
 WebUI.scrollToPosition(50, 60)
 
-WebUI.delay(10)
+WebUI.delay(15)
 
 
 WebUI.verifyTextPresent('Dashboard', true)

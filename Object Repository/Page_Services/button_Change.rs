@@ -11,13 +11,13 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@type = 'button' and @class = 'button new-change-button new-button z-button-os' and (text() = 'Change' or . = 'Change')]</value>
+         <value>//button[@type = 'button' and @class = 'button new-change-button new-button z-button-os' and (text() = 'Change' or . = 'Change')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

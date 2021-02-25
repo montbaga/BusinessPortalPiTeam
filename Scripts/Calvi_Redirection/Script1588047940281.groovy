@@ -155,12 +155,33 @@ WebUI.navigateToUrl('https://mijn.uat.tele2zakelijk.nl')
 WebUI.setText(findTestObject('Object Repository/linkingusers/Page_Mijn Tele2 Zakelijk/input_VOOR ZAKELIJK_username-hidden'), 
     GlobalVariable.userid)
 
-WebUI.setText(findTestObject('Object Repository/linkingusers/Page_Mijn Tele2 Zakelijk/input_VOOR ZAKELIJK_password'), 
-    'LEGoy6uz!!')
+WebUI.setText(findTestObject('Object Repository/linkingusers/Page_Mijn Tele2 Zakelijk/input_VOOR ZAKELIJK_password'), 'LEGoy6uz!!')
 
 WebUI.click(findTestObject('Object Repository/linkingusers/Page_Mijn Tele2 Zakelijk/input_VOOR ZAKELIJK_login-button'))
 
 WebUI.click(findTestObject('Object Repository/calvilink/Page_Customer Assignment/a_Invoices'))
 
+WebUI.takeScreenshot()
+
 WebUI.click(findTestObject('Object Repository/calvilink/Page_Customer Assignment/a_Invoices_1'))
+
+WebUI.takeScreenshot()
+
+
+
+WebUI.switchToWindowIndex(1)
+WebUI.delay(20)
+WebUI.maximizeWindow()
+
+String url = WebUI.getUrl()
+
+println(url)
+
+if (url.contentEquals('https://factuuroverzicht.uat.tele2zakelijk.nl/unifiedapp#/common/landingPage/InvoiceOverview'))  {
+	println('Calvi Redirection is passed')
+} else {
+	println('Calvi Redirection is failed')
+}
+
+WebUI.takeScreenshot()
 

@@ -17,24 +17,25 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 //for loop starts here to capture two Changes for BP
-//for (int i = 0; i < 2; i++) {
+//for (int i = 0; i < 50; i++) {
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://mijn.uat.tele2zakelijk.nl/')
 
-WebUI.setText(findTestObject('Object Repository/Page_Mijn Tele2 Zakelijk/input_VOOR ZAKELIJK_username-hidden'), 'jelle.van-wijk@tele2.com')
+WebUI.setText(findTestObject('Object Repository/Page_Mijn Tele2 Zakelijk/input_VOOR ZAKELIJK_username-hidden'), 'abel.fokkinga@tele2.com')
 
+//jelle.van-wijk
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_Mijn Tele2 Zakelijk/input_VOOR ZAKELIJK_password'), 'tE+PEiSUqqgo23gg3D+W7A==')
 
 WebUI.click(findTestObject('Object Repository/Page_Mijn Tele2 Zakelijk/input_VOOR ZAKELIJK_login-button'))
 
 WebUI.setText(findTestObject('Object Repository/OUTAGESINUAT/input_Search_txtAccountId'), '900154467')
-	
-	WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/button_Search'))
-	
-	WebUI.delay(2)
-	
-	WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/div_Wrdg Zu Qkrx_rt-td'))
+
+WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/button_Search'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/div_Wrdg Zu Qkrx_rt-td'))
 
 WebUI.click(findTestObject('Object Repository/Page_Services/td_Zakelijk Mobiel 4G_id_3__3_1_1_3_1_4'))
 
@@ -42,12 +43,19 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/Page_Services/button_Change'))
 
+WebUI.delay(10)
+
+WebUI.click(findTestObject('Object Repository/Page_Services/span_Select change type'), FailureHandling.CONTINUE_ON_FAILURE)
+
+//WebUI.click(findTestObject('Object Repository/changedropdown/Page_Services/changetypedropdown'))
+WebUI.click(findTestObject('Object Repository/changedropdown/Page_Services/closer'), FailureHandling.CONTINUE_ON_FAILURE)
+
 WebUI.click(findTestObject('Object Repository/Page_Services/span_Select change type'))
 
+//WebUI.click(findTestObject('Object Repository/changedropdown/Page_Services/changetypedropdown'))
 WebUI.click(findTestObject('Object Repository/Page_Services/span_4x ISDN2'))
 
 //WebUI.setText(findTestObject('Object Repository/Page_Services/input_Re-installation with router kit A (AT_9b24c5'), 'check')
-
 WebUI.click(findTestObject('Object Repository/Page_Services/i_Re-installation with router kit A (ATM cr_83c652'))
 
 WebUI.delay(2)
@@ -69,6 +77,8 @@ WebUI.setText(findTestObject('Object Repository/Page_Services/input_Send notific
 WebUI.setText(findTestObject('Object Repository/Page_Services/input_Send notifications_id_4__9_5_5_1_2_1_2_1_4_1'), '+3111111111')
 */
 WebUI.click(findTestObject('Object Repository/Page_Services/button_Send'))
+
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/Page_Services/div_pmessage'))
 

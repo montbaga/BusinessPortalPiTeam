@@ -1,18 +1,19 @@
 package readexcel
 
+import java.time.format.DateTimeFormatter
+
 import org.apache.poi.xssf.usermodel.XSSFSheet
 import org.apache.poi.xssf.usermodel.XSSFWorkbook
-
 
 import com.kms.katalon.core.annotation.Keyword
 
 import internal.GlobalVariable
-import java.io.FileInputStream;
-import java.io.IOException
 public class readexceldownload {
 
 
-	String DownloadPath = 'C:\\monty'
+	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy")
+
+	String DownloadPath = 'C:\\Users\\montbaga\\Downloads\\Orders export overview_dtf.xlsx'
 	@Keyword
 	//Read excel cell value by passing the path of the file
 	public boolean Excel_Read(String DownloadPath) {

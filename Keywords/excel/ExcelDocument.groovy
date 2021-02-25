@@ -26,7 +26,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory
 import internal.GlobalVariable
 
 public class ExcelDocument {
-	
+
 	private final Workbook workbook;
 	private Sheet currentSheet;
 
@@ -51,7 +51,7 @@ public class ExcelDocument {
 		currentSheet = workbook.getSheetAt(index);
 	}
 
-	
+
 	public String getCellText(final int rowIndex, final int columnIndex) {
 		Row row = currentSheet.getRow(rowIndex);
 		Cell cell = row.getCell(columnIndex);

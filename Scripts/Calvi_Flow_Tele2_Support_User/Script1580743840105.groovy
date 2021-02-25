@@ -57,94 +57,93 @@ WebUI.callTestCase(findTestCase('deleteusersallreelations'), [:], FailureHandlin
 
 WebUI.callTestCase(findTestCase('db_commit'), [:], FailureHandling.STOP_ON_FAILURE)
 
-try {
-    WebUI.openBrowser('')
+WebUI.openBrowser('')
 
-    WebUI.navigateToUrl('https://mijn.uat.tele2zakelijk.nl/')
+WebUI.navigateToUrl('https://mijn.uat.tele2zakelijk.nl/')
 
-    WebUI.setText(findTestObject('Object Repository/BP Tele2 NL/input_VOOR ZAKELIJK_username-hidden'), 'ABEL.FOKKINGA@TELE2.COM')
+WebUI.setText(findTestObject('Object Repository/BP Tele2 NL/input_VOOR ZAKELIJK_username-hidden'), 'abel.fokkinga@tele2.com')
 
-    WebUI.setEncryptedText(findTestObject('Object Repository/BP Tele2 NL/input_VOOR ZAKELIJK_password'), 'tE+PEiSUqqgo23gg3D+W7A==')
+WebUI.setEncryptedText(findTestObject('Object Repository/BP Tele2 NL/input_VOOR ZAKELIJK_password'), 'tE+PEiSUqqgo23gg3D+W7A==')
 
-    WebUI.click(findTestObject('Object Repository/BP Tele2 NL/input_VOOR ZAKELIJK_login-button'))
+WebUI.click(findTestObject('Object Repository/BP Tele2 NL/input_VOOR ZAKELIJK_login-button'))
 
-    WebUI.click(findTestObject('Object Repository/Page_Customer Assignment/a_Settings'))
+//WebUI.click(findTestObject('Object Repository/Page_Customer Assignment/a_Settings'))
 
-    WebUI.click(findTestObject('Object Repository/a_User management'))
-	
-	
-	WebUI.click(findTestObject('Object Repository/Page_User Management/div_Select an Account'))
-	
-	WebUI.setText(findTestObject('Object Repository/Page_User Management/input_Select an Account_layoutPane_2_1_1_2_1_1'), 'BP User')
-	
-	WebUI.click(findTestObject('Object Repository/Page_User Management/span_BP User Management for Tele2 NL'))
-	
+//WebUI.click(findTestObject('Object Repository/a_User management'))
+//---
+//WebUI.click(findTestObject('Object Repository/Page_User Management/div_Select an Account'))
 
-    //WebUI.click(findTestObject('Object Repository/div_Select all customers'))
+//WebUI.setText(findTestObject('Object Repository/Page_User Management/input_Select an Account_layoutPane_2_1_1_2_1_1'), 'BP User Management for Tele2 NL')
 
-    //WebUI.setText(findTestObject('Object Repository/input_Select all customers_layoutPane_2_2_1_2_1_1'), 'BP User')
+//WebUI.click(findTestObject('Object Repository/Page_User Management/span_BP User Management for Tele2 NL'))
+    //WebUI.click(findTestObject('Object Repository/Page_User Management/span_BP User Management for Tele2 NL'))
+//} else {
+  //  WebUI.click(findTestObject('Object Repository/div_Select all customers'))
 
-    WebUI.delay(1)
+    //WebUI.setText(findTestObject('Object Repository/input_Select all customers_layoutPane_2_2_1_2_1_1'), 'BP User Management for Tele2 NL')
+
+    //WebUI.delay(1)
 
     //WebUI.click(findTestObject('Object Repository/span_BP User Management for Tele2 NL'))
 
     WebUI.delay(3)
+//}
 
-    //  WebUI.click(findTestObject('Object Repository/BP Tele2 NL/a_Settings'))
-    //  WebUI.click(findTestObject('Object Repository/BP Tele2 NL/a_User management'))
-    //   WebUI.click(findTestObject('Object Repository/BP Tele2 NL/div_Select all customers'))
-    //   WebUI.click(findTestObject('Object Repository/BP Tele2 NL/div_BP User Management for Tele2 NL'))
-    WebUI.click(findTestObject('Object Repository/BP Tele2 NL/button_Add user'))
+  WebUI.click(findTestObject('Object Repository/BP Tele2 NL/a_Settings'))
+  WebUI.click(findTestObject('Object Repository/BP Tele2 NL/a_User management'))
+   WebUI.click(findTestObject('Object Repository/BP Tele2 NL/div_Select all customers'))
+   WebUI.setText(findTestObject('Object Repository/input_Select all customers_layoutPane_2_2_1_2_1_1'), 'BP User Management for Tele2 NL')
+   WebUI.delay(2)
+   //WebUI.click(findTestObject('Object Repository/BP Tele2 NL/div_BP User Management for Tele2 NL'))
+   WebUI.click(findTestObject('Object Repository/tele2supportuser/Page_User Management/span_BP User Management for Tele2 NL'))
+   WebUI.delay(3)
+WebUI.click(findTestObject('Object Repository/BP Tele2 NL/button_Add user'))
 
-    WebUI.click(findTestObject('Object Repository/BP Tele2 NL/input_User ID_requestAccountFirstName'))
+WebUI.click(findTestObject('Object Repository/BP Tele2 NL/input_User ID_requestAccountFirstName'))
 
-    WebUI.setText(findTestObject('Object Repository/BP Tele2 NL/input_User ID_requestAccountFirstName'), GlobalVariable.userid)
+WebUI.setText(findTestObject('Object Repository/BP Tele2 NL/input_User ID_requestAccountFirstName'), GlobalVariable.userid)
 
-    WebUI.click(findTestObject('Object Repository/BP Tele2 NL/input_First name_contactEditFirstName'))
+WebUI.click(findTestObject('Object Repository/BP Tele2 NL/input_First name_contactEditFirstName'))
 
-    WebUI.setText(findTestObject('Object Repository/BP Tele2 NL/input_First name_contactEditFirstName'), GlobalVariable.firstname)
+WebUI.setText(findTestObject('Object Repository/BP Tele2 NL/input_First name_contactEditFirstName'), GlobalVariable.firstname)
 
-    WebUI.click(findTestObject('Object Repository/BP Tele2 NL/input_Middle name_contactEditMiddleName'))
+WebUI.click(findTestObject('Object Repository/BP Tele2 NL/input_Middle name_contactEditMiddleName'))
 
-    WebUI.setText(findTestObject('Object Repository/BP Tele2 NL/input_Middle name_contactEditMiddleName'), GlobalVariable.middlename)
+WebUI.setText(findTestObject('Object Repository/BP Tele2 NL/input_Middle name_contactEditMiddleName'), GlobalVariable.middlename)
 
-    WebUI.click(findTestObject('Object Repository/BP Tele2 NL/input_Last name_contactEditLastName'))
+WebUI.click(findTestObject('Object Repository/BP Tele2 NL/input_Last name_contactEditLastName'))
 
-    WebUI.setText(findTestObject('Object Repository/BP Tele2 NL/input_Last name_contactEditLastName'), GlobalVariable.lastname)
+WebUI.setText(findTestObject('Object Repository/BP Tele2 NL/input_Last name_contactEditLastName'), GlobalVariable.lastname)
 
-    WebUI.click(findTestObject('Object Repository/BP Tele2 NL/input_Email-address_contactEditEmail'))
+WebUI.click(findTestObject('Object Repository/BP Tele2 NL/input_Email-address_contactEditEmail'))
 
-    WebUI.setText(findTestObject('Object Repository/BP Tele2 NL/input_Email-address_contactEditEmail'), GlobalVariable.email)
+WebUI.setText(findTestObject('Object Repository/BP Tele2 NL/input_Email-address_contactEditEmail'), GlobalVariable.email)
 
-    WebUI.click(findTestObject('Object Repository/BP Tele2 NL/input_Fixed number_contactEditFixedNumber'))
+WebUI.click(findTestObject('Object Repository/BP Tele2 NL/input_Fixed number_contactEditFixedNumber'))
 
-    WebUI.setText(findTestObject('Object Repository/BP Tele2 NL/input_Fixed number_contactEditFixedNumber'), GlobalVariable.fixednumber)
+WebUI.setText(findTestObject('Object Repository/BP Tele2 NL/input_Fixed number_contactEditFixedNumber'), GlobalVariable.fixednumber)
 
-    WebUI.click(findTestObject('Object Repository/BP Tele2 NL/input_Email-address_contactEditEmail'))
+WebUI.click(findTestObject('Object Repository/BP Tele2 NL/input_Email-address_contactEditEmail'))
 
-    WebUI.setText(findTestObject('Object Repository/BP Tele2 NL/input_Mobile number_contactEditMobileNumber'), GlobalVariable.mobilenumber)
+WebUI.setText(findTestObject('Object Repository/BP Tele2 NL/input_Mobile number_contactEditMobileNumber'), GlobalVariable.mobilenumber)
 
-    WebUI.click(findTestObject('Object Repository/BP Tele2 NL/span_Male'))
+WebUI.click(findTestObject('Object Repository/BP Tele2 NL/span_Male'))
 
-    WebUI.click(findTestObject('Object Repository/BP Tele2 NL/span_Yes'))
+WebUI.click(findTestObject('Object Repository/BP Tele2 NL/span_Yes'))
 
-    WebUI.click(findTestObject('Object Repository/BP Tele2 NL/label'))
+WebUI.click(findTestObject('Object Repository/BP Tele2 NL/label'))
 
-    // WebUI.click(findTestObject('Object Repository/BP Tele2 NL/span_Male'))
-    //    WebUI.click(findTestObject('Object Repository/BP Tele2 NL/span_Yes'))
-    WebUI.click(findTestObject('Object Repository/managerradiobutton/managerradiobutton_Yes'))
+// WebUI.click(findTestObject('Object Repository/BP Tele2 NL/span_Male'))
+//    WebUI.click(findTestObject('Object Repository/BP Tele2 NL/span_Yes'))
+WebUI.click(findTestObject('Object Repository/managerradiobutton/managerradiobutton_Yes'))
 
-    //WebUI.click(findTestObject('Object Repository/label'))
-    WebUI.delay(2)
+//WebUI.click(findTestObject('Object Repository/label'))
+WebUI.delay(2)
 
-    // WebUI.click(findTestObject('Object Repository/BP Tele2 NL/span_Invoice overview old invoices'))
-    WebUI.click(findTestObject('Object Repository/BP Tele2 NL/button_Save'))
+// WebUI.click(findTestObject('Object Repository/BP Tele2 NL/span_Invoice overview old invoices'))
+WebUI.click(findTestObject('Object Repository/BP Tele2 NL/button_Save'))
 
-    WebUI.delay(8)
-}
-catch (Exception e) {
-    println("Exception: $e")
-} 
+WebUI.delay(8)
 
 WebUI.click(findTestObject('Object Repository/Page_Customer Assignment/a_Settings'))
 
@@ -169,7 +168,4 @@ WebUI.delay(20)
 WebUI.callTestCase(findTestCase('db_select'), [:], FailureHandling.STOP_ON_FAILURE)
 
 println('Calvi Flow for Tele2 Support user is passed in Database')
-
-
-
 

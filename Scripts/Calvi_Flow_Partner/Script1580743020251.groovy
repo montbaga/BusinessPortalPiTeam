@@ -56,9 +56,7 @@ WebUI.callTestCase(findTestCase('deleteusersallreelations'), [:], FailureHandlin
 WebUI.callTestCase(findTestCase('db_commit'), [:], FailureHandling.STOP_ON_FAILURE)
 
 	
-	try
-	
-	{
+
 	
 	WebUI.openBrowser('')
 	
@@ -85,6 +83,8 @@ WebUI.callTestCase(findTestCase('db_commit'), [:], FailureHandling.STOP_ON_FAILU
 	WebUI.click(findTestObject('Object Repository/Page_Customer Assignment/a_Settings'))
 	
 	WebUI.click(findTestObject('Object Repository/Page_Customer Assignment/a_User management'))
+	
+	WebUI.delay(5)
 	
 	WebUI.click(findTestObject('Object Repository/Page_User Management/button_Add user'))
 	
@@ -135,24 +135,23 @@ WebUI.callTestCase(findTestCase('db_commit'), [:], FailureHandling.STOP_ON_FAILU
 	
 		//WebUI.click(findTestObject('Object Repository/label'))
 	
-		WebUI.delay(2)
+		WebUI.delay(8)
 	
 		//WebUI.click(findTestObject('Object Repository/Page_User Management/span_Invoice overview old invoices'))
 	
 		WebUI.click(findTestObject('Object Repository/Page_User Management/button_Save'))
 	
-		WebUI.delay(2)
+		WebUI.delay(7)
 		
-	}
-	 
-	catch(Exception e) {
-	println("Exception: ${e}")}
+
 	
 	WebUI.click(findTestObject('Object Repository/Page_Customer Assignment/a_Settings'))
 	
 	WebUI.click(findTestObject('Object Repository/Page_Customer Assignment/a_User management'))
 	
 	WebUI.setText(findTestObject('Object Repository/SearchLoginName/searchloginame'), GlobalVariable.userid)
+	
+	WebUI.delay(2)
 	
 	WebUI.click(findTestObject('Object Repository/searchuser/selectsearcheduser'))
 	

@@ -6,14 +6,18 @@
    <elementGuidId>65450b98-e6cb-4997-90df-9a4be3c19bb1</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//span[@id = 'questionsColumn_2_1_1' and (text() = 'Select change type *' or . = 'Select change type *')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//span[@id='questionsColumn_2_1_1']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

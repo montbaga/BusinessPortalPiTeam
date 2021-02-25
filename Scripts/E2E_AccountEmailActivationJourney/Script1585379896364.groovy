@@ -17,8 +17,6 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import org.openqa.selenium.Keys as Keys
 
-
-
 String charSet = 'abcdefghijklmno'
 
 String charSet1 = '1234567890'
@@ -89,7 +87,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://mijn.uat.tele2zakelijk.nl')
 
-WebUI.setText(findTestObject('Object Repository/SCOE/input_VOOR ZAKELIJK_username-hidden'), 'sanchit.gupta')
+WebUI.setText(findTestObject('Object Repository/SCOE/input_VOOR ZAKELIJK_username-hidden'), 'karthik.murugan@t-mobile.nl')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/SCOE/input_VOOR ZAKELIJK_password'), 'tE+PEiSUqqgo23gg3D+W7A==')
 
@@ -102,6 +100,8 @@ WebUI.click(findTestObject('Object Repository/SCOE/a_Other'))
 WebUI.click(findTestObject('Object Repository/SCOE/a_Order center'))
 
 WebUI.click(findTestObject('Object Repository/SCOE/a_Order center mobile'))
+
+WebUI.delay(4)
 
 WebUI.click(findTestObject('Object Repository/SCOE/input_Account Type_createAccount'))
 
@@ -182,7 +182,6 @@ WebUI.takeScreenshot()
 WebUI.waitForPageLoad(5)
 
 //--------------------------------------------------------------------------------------------------------------------
-
 String charSetact = 'abcdefghijklmno'
 
 String charSetnum = '1234567890'
@@ -190,8 +189,6 @@ String charSetnum = '1234567890'
 GlobalVariable.password = 'LEGoy6uz!!'
 
 int lengthact = 8
-
-
 
 GlobalVariable.activatenewlogin = ('monty' + RandomStringUtils.random(length, charSetact.toCharArray()))
 
@@ -205,15 +202,14 @@ println(GlobalVariable.activatenewemail)
 
 println(GlobalVariable.activatephonenumber)
 
-
 WebUI.selectOptionByValue(findTestObject('Object Repository/activateaccount/Page_Mijn Tele2 Zakelijk - Registreer Account/select_NederlandsEnglish'), 
     '22045', true)
 
-WebUI.setText(findTestObject('Object Repository/activateaccount/Page_My Tele2 Business - Setup Account/input_Username_loginName'), GlobalVariable.activatenewlogin)
+WebUI.setText(findTestObject('Object Repository/activateaccount/Page_My Tele2 Business - Setup Account/input_Username_loginName'), 
+    GlobalVariable.activatenewlogin)
+
 WebUI.setText(findTestObject('Object Repository/activateaccount/Page_My Tele2 Business - Setup Account/input_E-mail_email'), 
     GlobalVariable.activatenewemail)
-
-
 
 WebUI.click(findTestObject('Object Repository/activateaccount/Page_My Tele2 Business - Setup Account/input__button'))
 
@@ -248,122 +244,122 @@ WebUI.click(findTestObject('Object Repository/SCOE/input_VOOR ZAKELIJK_login-but
 
 WebUI.takeScreenshot()
 
-List<String> clarifyvalue =  CustomKeywords.'clarifysync.clarifysyncdb.connection'('jdbc:oracle:thin:@//iuu-pordb01.dmz.lan:1521/PORUAT', 'businessportal', 
-    'p0rt0l')
+List<String> clarifyvalue = CustomKeywords.'clarifysync.clarifysyncdb.connection'('jdbc:oracle:thin:@//iuu-pordb01.dmz.lan:1521/PORUAT', 
+    'businessportal', 'p0rt0l')
 
+if ((clarifyvalue.get(0) == null) || 'null'.equals(clarifyvalue.get(0))) {
+    println('Clarify sync for Consolidator Contact is passed ')
+} else {
+    println('Clarify sync for Consolidator Contact is failed ')
+}
 
+if ((clarifyvalue.get(1) != null) && !('null'.equals(clarifyvalue.get(1)))) {
+    println('Clarify sync for Non Consolidator Contact is passed ')
+} else {
+    println('Clarify sync for Non Consolidator Contact is failed ')
+}
 
-if (clarifyvalue.get(0) == null || 'null'.equals(clarifyvalue.get(0))) 
-      { 
-	println('Clarify sync for Consolidator Contact is passed ')
-	}
-	else {
-	println('Clarify sync for Consolidator Contact is failed ')
-	     }
+WebUI.click(findTestObject('Object Repository/newusermanagement/Page_My Tele2 Business/a_Settings'))
+
+WebUI.click(findTestObject('Object Repository/newusermanagement/Page_My Tele2 Business/a_User management'))
+
+WebUI.click(findTestObject('Object Repository/Page_User Management/button_Add user'))
+
+WebUI.scrollToPosition(0, 0)
+
+WebUI.click(findTestObject('Object Repository/Page_User Management/input_User ID_requestAccountFirstName'))
+
+//WebUI.setText(findTestObject('Page_User Management/input_User ID_requestAccountFirstName'), userid)
+WebUI.setText(findTestObject('Page_User Management/input_User ID_requestAccountFirstName'), GlobalVariable.userid)
+
+WebUI.click(findTestObject('Object Repository/Page_User Management/input_First name_contactEditFirstName'))
+
+WebUI.setText(findTestObject('Page_User Management/input_First name_contactEditFirstName'), GlobalVariable.firstname)
+
+WebUI.click(findTestObject('Object Repository/Page_User Management/input_Middle name_contactEditMiddleName'))
+
+WebUI.setText(findTestObject('Page_User Management/input_Middle name_contactEditMiddleName'), GlobalVariable.middlename)
+
+WebUI.click(findTestObject('Object Repository/Page_User Management/input_Last name_contactEditLastName'))
+
+WebUI.setText(findTestObject('Page_User Management/input_Last name_contactEditLastName'), GlobalVariable.lastname)
+
+WebUI.click(findTestObject('Object Repository/Page_User Management/input_Email-address_contactEditEmail'))
+
+WebUI.setText(findTestObject('Page_User Management/input_Email-address_contactEditEmail'), GlobalVariable.email)
+
+WebUI.click(findTestObject('Object Repository/Page_User Management/input_Fixed number_contactEditFixedNumber'))
+
+WebUI.setText(findTestObject('Page_User Management/input_Fixed number_contactEditFixedNumber'), GlobalVariable.fixednumber)
+
+WebUI.click(findTestObject('Page_User Management/input_Email-address_contactEditEmail'))
+
+WebUI.setText(findTestObject('Page_User Management/input_Mobile number_contactEditMobileNumber'), GlobalVariable.mobilenumber)
+
+WebUI.click(findTestObject('Object Repository/Page_User Management/span_Male'))
+
+WebUI.click(findTestObject('Object Repository/Page_User Management/span_Yes'))
+
+WebUI.click(findTestObject('Object Repository/Page_User Management/label'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/managerradiobutton/managerradiobutton_Yes'))
+
+//WebUI.click(findTestObject('Object Repository/Page_User Management/span_Invoice overview old invoices'))
+WebUI.click(findTestObject('Object Repository/Page_User Management/button_Save'))
+
+String successmessage1 = WebUI.getText(findTestObject('Object Repository/SCOE/contactupdatesuccess'))
+
+WebUI.takeScreenshot()
+
+println(successmessage1)
+
+if (successmessage1.contains('Contact updated successfully')) {
+    println('Contact has been created successfully :) ')
+} else {
+    println('Contact has not been created successfully  :( ')
+}
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Object Repository/newusermanagement/Page_My Tele2 Business/a_Settings'))
+
+WebUI.click(findTestObject('Object Repository/newusermanagement/Page_My Tele2 Business/a_User management'))
+
+WebUI.setText(findTestObject('Object Repository/SearchLoginName/searchloginame'), GlobalVariable.userid)
+
+WebUI.click(findTestObject('Object Repository/searchuser/selectsearcheduser'))
+
+WebUI.click(findTestObject('Object Repository/Page_User Management/input_User ID_requestAccountFirstName'))
+
+//WebUI.setText(findTestObject('Page_User Management/input_User ID_requestAccountFirstName'), userid)
+WebUI.setText(findTestObject('Page_User Management/input_User ID_requestAccountFirstName'), GlobalVariable.useridupdate)
+
+WebUI.click(findTestObject('Object Repository/Page_User Management/button_Save'))
+
+String successmessage = WebUI.getText(findTestObject('Object Repository/SCOE/contactupdatesuccess'))
+
+WebUI.takeScreenshot()
+
+println(successmessage)
+
+if (successmessage.contains('Your details have been changed successfully.')) {
+    println('Contact has been updated and saved successfully :) ')
+} else {
+    println('Contact has not been updated and saved successfully  :( ')
+}
+//---------------------------
+List<String> provisioningtablevalues = CustomKeywords.'accountactivationstatus.accountactivationstatusget.connection'('jdbc:oracle:thin:@//iuu-pordb01.dmz.lan:1521/PORUAT','businessportal', 'p0rt0l')
 	
-if (clarifyvalue.get(1) != null && !'null'.equals(clarifyvalue.get(1))) 
-       { 
-	println('Clarify sync for Non Consolidator Contact is passed ')
-        }
-else 
-      {
-println('Clarify sync for Non Consolidator Contact is failed ')
-      }
 
-	 WebUI.click(findTestObject('Object Repository/newusermanagement/Page_My Tele2 Business/a_Settings'))
-
-WebUI.click(findTestObject('Object Repository/newusermanagement/Page_My Tele2 Business/a_User management'))
-	  
-		  WebUI.click(findTestObject('Object Repository/Page_User Management/button_Add user'))
-	  
-		  WebUI.scrollToPosition(0, 0)
-	  
-		  WebUI.click(findTestObject('Object Repository/Page_User Management/input_User ID_requestAccountFirstName'))
-	  
-		  //WebUI.setText(findTestObject('Page_User Management/input_User ID_requestAccountFirstName'), userid)
-		  WebUI.setText(findTestObject('Page_User Management/input_User ID_requestAccountFirstName'), GlobalVariable.userid)
-	  
-		  WebUI.click(findTestObject('Object Repository/Page_User Management/input_First name_contactEditFirstName'))
-	  
-		  WebUI.setText(findTestObject('Page_User Management/input_First name_contactEditFirstName'), GlobalVariable.firstname)
-	  
-		  WebUI.click(findTestObject('Object Repository/Page_User Management/input_Middle name_contactEditMiddleName'))
-	  
-		  WebUI.setText(findTestObject('Page_User Management/input_Middle name_contactEditMiddleName'), GlobalVariable.middlename)
-	  
-		  WebUI.click(findTestObject('Object Repository/Page_User Management/input_Last name_contactEditLastName'))
-	  
-		  WebUI.setText(findTestObject('Page_User Management/input_Last name_contactEditLastName'), GlobalVariable.lastname)
-	  
-		  WebUI.click(findTestObject('Object Repository/Page_User Management/input_Email-address_contactEditEmail'))
-	  
-		  WebUI.setText(findTestObject('Page_User Management/input_Email-address_contactEditEmail'), GlobalVariable.email)
-	  
-		  WebUI.click(findTestObject('Object Repository/Page_User Management/input_Fixed number_contactEditFixedNumber'))
-	  
-		  WebUI.setText(findTestObject('Page_User Management/input_Fixed number_contactEditFixedNumber'), GlobalVariable.fixednumber)
-	  
-		  WebUI.click(findTestObject('Page_User Management/input_Email-address_contactEditEmail'))
-	  
-		  WebUI.setText(findTestObject('Page_User Management/input_Mobile number_contactEditMobileNumber'), GlobalVariable.mobilenumber)
-	  
-		  WebUI.click(findTestObject('Object Repository/Page_User Management/span_Male'))
-	  
-		  WebUI.click(findTestObject('Object Repository/Page_User Management/span_Yes'))
-	  
-		  WebUI.click(findTestObject('Object Repository/Page_User Management/label'))
-	  
-		  WebUI.delay(2)
-	  
-		  WebUI.click(findTestObject('Object Repository/managerradiobutton/managerradiobutton_Yes'))
-	  
-		  //WebUI.click(findTestObject('Object Repository/Page_User Management/span_Invoice overview old invoices'))
-		  WebUI.click(findTestObject('Object Repository/Page_User Management/button_Save'))
-		  
-		  String successmessage1 = WebUI.getText(findTestObject('Object Repository/SCOE/contactupdatesuccess'))
-		  
-		  WebUI.takeScreenshot()
-		  
-		  println(successmessage1)
-		  
-		  if (successmessage1.contains('Contact updated successfully')) {
-			  println('Contact has been created successfully :) ')
-		  } else {
-			  println('Contact has not been created successfully  :( ')
-		  }
-	  
-		  WebUI.delay(5)
-	  
-	  
-	  WebUI.click(findTestObject('Object Repository/newusermanagement/Page_My Tele2 Business/a_Settings'))
-
-WebUI.click(findTestObject('Object Repository/newusermanagement/Page_My Tele2 Business/a_User management'))
-	  
-	  WebUI.setText(findTestObject('Object Repository/SearchLoginName/searchloginame'), GlobalVariable.userid)
-	  
-	  WebUI.click(findTestObject('Object Repository/searchuser/selectsearcheduser'))
-	  
-	  WebUI.click(findTestObject('Object Repository/Page_User Management/input_User ID_requestAccountFirstName'))
-	  
-		  //WebUI.setText(findTestObject('Page_User Management/input_User ID_requestAccountFirstName'), userid)
-		  WebUI.setText(findTestObject('Page_User Management/input_User ID_requestAccountFirstName'), GlobalVariable.useridupdate)
-		  
-		  WebUI.click(findTestObject('Object Repository/Page_User Management/button_Save'))
-		  
-		  String successmessage = WebUI.getText(findTestObject('Object Repository/SCOE/contactupdatesuccess'))
-		  
-		  WebUI.takeScreenshot()
-		  
-		  println(successmessage)
-		  
-		  if (successmessage.contains('Your details have been changed successfully.')) {
-			  println('Contact has been updated and saved successfully :) ')
-		  } else {
-			  println('Contact has not been updated and saved successfully  :( ')
-		  }
-	  
-	  
+if ((provisioningtablevalues.get(2) == "ACCOUNT_ACTIVATED") && 'COMPLETED'.equals(provisioningtablevalues.get(3))) {
+	println('Account is activated successfully')
+} else {
+	println('Account is not activated successfully ')
+}
 
 
-
+//CustomKeywords.'accountactivationstatus.accountactivationstatusget.connection'('jdbc:oracle:thin:@//iuu-pordb01.dmz.lan:1521/PORUAT', 
+  //  'businessportal', 'p0rt0l')
 

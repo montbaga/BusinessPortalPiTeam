@@ -69,6 +69,8 @@ WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/span_0'))
 
 WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/button_Current network outages'))
 
+WebUI.refresh()
+
 WebUI.takeScreenshot()
 
 WebUI.delay(1)

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span__mydpicon icon-mydpcalendar</name>
+   <tag></tag>
+   <elementGuidId>a9bf8cf9-67e6-4a72-834b-02f47e89b8f9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.mydpicon.icon-mydpcalendar</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='QE502|Q-1283']/my-date-picker/div/div/div/button/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mydpicon icon-mydpcalendar</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;QE502|Q-1283&quot;)/my-date-picker[1]/div[@class=&quot;mydp&quot;]/div[@class=&quot;selectiongroup ng-star-inserted&quot;]/div[@class=&quot;selbtngroup&quot;]/button[@class=&quot;btnpicker btnpickerenabled&quot;]/span[@class=&quot;mydpicon icon-mydpcalendar&quot;]</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref_element</name>
+      <type>Main</type>
+      <value>Object Repository/Page_My Tele2 Business/frame_concat(bodypThis page uses frames, bu_95d8e3</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='QE502|Q-1283']/my-date-picker/div/div/div/button/span</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//my-date-picker/div/div/div/button/span</value>
+   </webElementXpaths>
+</WebElementEntity>

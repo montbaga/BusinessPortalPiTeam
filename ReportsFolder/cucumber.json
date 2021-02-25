@@ -1,0 +1,81 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 12,
+        "name": "my scenario",
+        "description": "",
+        "id": "my-test;my-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 15456600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "client enters given",
+            "match": {
+              "location": "test.givenblock()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 798600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "client enters karthik.murugan@t-mobile.nl and Abcd1234 when",
+            "match": {
+              "arguments": [
+                {
+                  "val": "karthik.murugan@t-mobile.nl",
+                  "offset": 14
+                },
+                {
+                  "val": "Abcd1234",
+                  "offset": 46
+                }
+              ],
+              "location": "test.whenblock(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1070200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "client enters and",
+            "match": {
+              "location": "test.andblock()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 364000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "client enters then",
+            "match": {
+              "location": "test.thenblock()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "my test",
+    "description": "",
+    "id": "my-test",
+    "keyword": "Feature",
+    "uri": "Include/features/test.feature",
+    "tags": []
+  }
+]

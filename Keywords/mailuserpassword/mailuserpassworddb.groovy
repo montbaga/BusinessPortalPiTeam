@@ -36,7 +36,7 @@ public class mailuserpassworddb {
 		//String mailpassword = ""
 
 
-		sqlConnection.eachRow("select LOGIN_NAME  from USERS  where ROWNUM =1 ORDER BY ID DESC") { row ->
+		sqlConnection.eachRow("SELECT * FROM (SELECT LOGIN_NAME FROM USERS ORDER BY ID DESC) WHERE ROWNUM = 1") { row ->
 			mailuser = row [0]
 			//password = row [1]
 

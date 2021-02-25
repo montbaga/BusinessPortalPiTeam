@@ -42,7 +42,8 @@ public class activate2fadb {
 
 		//sqlConnection("update accounts set ACTIVATED_2FA = 'Y' where ACCOUNT_ID = '900157320'")
 		//sqlConnection("select * from accounts where ACCOUNT_ID = '900157320'")
-		sqlConnection("update accounts set ACTIVATED_2FA = 'Y'")
+		//sqlConnection("update accounts set ACTIVATED_2FA = 'Y'")
+		sqlConnection.execute("update accounts set ACTIVATED_2FA = 'Y' where ACCOUNT_ID = '900157320'")
 
 	}
 }

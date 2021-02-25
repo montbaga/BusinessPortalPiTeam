@@ -21,7 +21,7 @@ import groovy.sql.Sql
 import internal.GlobalVariable
 
 public class testupdatequerydb {
-	
+
 	@Keyword
 
 	public connection(String url, String user, String password){

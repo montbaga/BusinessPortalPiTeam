@@ -6,12 +6,12 @@
    <elementGuidId>1e598820-93d0-49be-9010-6662554514dd</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//radio-group[@id='myProfileLanguage']/div/span[2]/i[count(. | //*[@ref_element = 'Object Repository/iframeenglish/Page_My Profile/iframe_No messages available_id_1_1']) = count(//*[@ref_element = 'Object Repository/iframeenglish/Page_My Profile/iframe_No messages available_id_1_1'])]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//radio-group[@id='myProfileLanguage']/div/span[2]/i</value>
+         <key>XPATH</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

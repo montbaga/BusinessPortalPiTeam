@@ -1,0 +1,1 @@
+PowerShell.exe -Command "& {Start-Process PowerShell.exe -ArgumentList '-ExecutionPolicy Bypass -File ""%ALLUSERSPROFILE%\Microsoft\AppV\Client\Integration\B22F6B94-453C-4F91-A7AA-AE9B93A47C39\Root\LaunchClarify.ps1" /appvve:B22F6B94-453C-4F91-A7AA-AE9B93A47C39_5F265472-E532-4A5B-AF4E-08349E92C512"'}"

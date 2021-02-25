@@ -35,7 +35,8 @@ public class activate2fanodb {
 
 		//sqlConnection("update accounts set ACTIVATED_2FA = 'Y' where ACCOUNT_ID = '900157320'")
 		//sqlConnection("select * from accounts where ACCOUNT_ID = '900157320'")
-		sqlConnection("update accounts set ACTIVATED_2FA = 'N'")
+		//sqlConnection("update accounts set ACTIVATED_2FA = 'N'")
+		sqlConnection.execute("update accounts set ACTIVATED_2FA = 'N' where ACCOUNT_ID = '900157320'")
 	}
 }
 

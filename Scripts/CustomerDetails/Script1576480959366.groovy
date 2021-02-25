@@ -40,8 +40,9 @@ WebUI.navigateToUrl('https://mijn.uat.tele2zakelijk.nl')
 
 WebUI.click(findTestObject('Object Repository/Page_Customer Assignment/a_Settings'))
 
-WebUI.click(findTestObject('Object Repository/Page_Customer Assignment/a_Customer details'))
 
+WebUI.click(findTestObject('Object Repository/Page_Customer Assignment/a_Customer details'))
+WebUI.delay(4)
 //WebUI.click(findTestObject('Object Repository/Page_Customer Details/div_Select all customers'))
 
 //WebUI.click(findTestObject('Object Repository/Page_Customer Details/div_Bnvtd BU4'))

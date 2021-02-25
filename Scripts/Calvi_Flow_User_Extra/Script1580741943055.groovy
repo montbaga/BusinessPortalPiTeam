@@ -128,7 +128,7 @@ WebUI.scrollToPosition(0, 0)
 	WebUI.click(findTestObject('Object Repository/Page_User Management/button_Save'))
 	
 
-WebUI.delay (5)
+WebUI.delay (8)
 
 }
 

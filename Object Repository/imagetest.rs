@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>imagetest</name>
+   <tag></tag>
+   <elementGuidId>9f83073e-bf7a-4af1-88c1-c68b781f1f56</elementGuidId>
+   <imagePath>C:\Users\montbaga\Desktop\iamge2.PNG</imagePath>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value>C:\Users\montbaga\Desktop\iamge2.PNG</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>IMAGE</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

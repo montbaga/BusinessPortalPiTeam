@@ -72,8 +72,9 @@ WebUI.click(findTestObject('Object Repository/Page_Services/div_Name Email Mobil
 WebUI.delay(1)
 
 WebUI.click(findTestObject('Object Repository/Page_Services/button_Send_Incident'))
-
+WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/Page_Services/div_pmessage'))
+
 
 String message = WebUI.getText(findTestObject('Object Repository/Page_Services/div_pmessage'))
 

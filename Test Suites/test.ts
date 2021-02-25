@@ -9,11 +9,18 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>323d41e4-6eea-4ddf-b92a-826622a34517</testSuiteGuid>
    <testCaseLink>
-      <guid>ceffa1c9-0cb0-46bb-b465-fe92a1b72552</guid>
+      <guid>2ec8d0b6-f4e5-4253-b3e3-69b45d241c8f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/E2E_AccountEmailActivationJourney</testCaseId>
+      <testCaseId>Test Cases/P502Add</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f52ea896-17d1-4c7f-9eab-d669c9493b07</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/New Test Case (2)</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

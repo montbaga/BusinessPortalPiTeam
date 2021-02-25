@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WindowsElementEntity>
+   <description></description>
+   <name>clarifyFile</name>
+   <tag></tag>
+   <locator>[@ClassName='Afx:400000:8:10003:10:0']&quot;</locator>
+   <locatorStrategy>CLASS_NAME</locatorStrategy>
+</WindowsElementEntity>

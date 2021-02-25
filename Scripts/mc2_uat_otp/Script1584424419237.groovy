@@ -14,8 +14,11 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import com.mysql.jdbc.*
+import groovy.sql.Sql as Sql
 
-String otp = CustomKeywords.'mc2_uat_otp.mc2_uat_otp_db.connection'('jdbc:oracle:thin:@//nott.corp.tele2.com:1521/sdtest', 'MC2_UAT_DATA', 
-    'test')
-println (otp)
+String otp = CustomKeywords.'mc2_uat_otp.mc2_uat_otp_db.connection'('jdbc:oracle:thin:@//nott.corp.tele2.com:1521/sdtest', 
+    'MC2_UAT_DATA', 'test')
+
+println(otp)
 

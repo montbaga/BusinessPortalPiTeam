@@ -146,7 +146,7 @@ WebUI.callTestCase(findTestCase('db_commit'), [:], FailureHandling.STOP_ON_FAILU
 	
 		WebUI.click(findTestObject('Object Repository/Page_User Management/button_Save'))
 	
-		WebUI.delay(4)
+		WebUI.delay(8)
 		
 	
 	

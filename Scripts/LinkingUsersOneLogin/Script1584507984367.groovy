@@ -129,7 +129,7 @@ WebUI.delay(4)
 
 //for (def rowNum=1; rowNum<=findTestData('New Test Data').getRowNumbers(); rowNum++) {
 WebUI.click(findTestObject('Object Repository/Page_User Management/button_Add user'))
-
+WebUI.delay(4)
 WebUI.scrollToPosition(0, 0)
 
 WebUI.click(findTestObject('Object Repository/Page_User Management/input_User ID_requestAccountFirstName'))
@@ -224,6 +224,8 @@ WebUI.delay(4)
 //for (def rowNum=1; rowNum<=findTestData('New Test Data').getRowNumbers(); rowNum++) {
 WebUI.click(findTestObject('Object Repository/Page_User Management/button_Add user'))
 
+WebUI.delay(4)
+
 WebUI.scrollToPosition(0, 0)
 
 WebUI.click(findTestObject('Object Repository/Page_User Management/input_User ID_requestAccountFirstName'))
@@ -299,8 +301,10 @@ WebUI.click(findTestObject('Object Repository/linkingusers/Page_Mijn Tele2 Zakel
 WebUI.click(findTestObject('Object Repository/linkingusers/Page_Customer Assignment/a_Settings'))
 
 WebUI.click(findTestObject('Object Repository/linkingusers/Page_Customer Assignment/a_Linking users'))
+WebUI.delay(4)
 
 WebUI.click(findTestObject('linkingusers/Page_My Tele2 BusinessLinking Users/div_Add user'))
+
 
 WebUI.setText(findTestObject('Object Repository/linkingusers/Page_My Tele2 BusinessLinking Users/input_Account ID_primaryAccountId'), 
     '900204038')
@@ -337,9 +341,40 @@ WebUI.click(findTestObject('Object Repository/linkingusers/Page_My Tele2 Busines
 
 WebUI.click(findTestObject('Object Repository/linkingusers/Page_My Tele2 Business/2nduser'))
 
-WebUI.waitForPageLoad(2)
+WebUI.takeScreenshot()
+
+WebUI.click(findTestObject('Object Repository/linkingusers/Page_My Tele2 Business/onelogindropdown'))
+
+WebUI.click(findTestObject('Object Repository/linkingusers/Page_My Tele2 Business/1stuser'))
 
 WebUI.takeScreenshot()
+
+WebUI.click(findTestObject('Object Repository/linkingusers/Page_My Tele2 Business/onelogindropdown'))
+
+WebUI.click(findTestObject('Object Repository/linkingusers/Page_My Tele2 Business/2nduser'))
+WebUI.takeScreenshot()
+WebUI.click(findTestObject('Object Repository/linkingusers/Page_My Tele2 Business/onelogindropdown'))
+WebUI.click(findTestObject('Object Repository/linkingusers/Page_My Tele2 Business/1stuser'))
+
+WebUI.takeScreenshot()
+WebUI.click(findTestObject('Object Repository/linkingusers/Page_My Tele2 Business/onelogindropdown'))
+WebUI.click(findTestObject('Object Repository/linkingusers/Page_My Tele2 Business/2nduser'))
+WebUI.takeScreenshot()
+WebUI.click(findTestObject('Object Repository/linkingusers/Page_My Tele2 Business/onelogindropdown'))
+WebUI.click(findTestObject('Object Repository/linkingusers/Page_My Tele2 Business/1stuser'))
+WebUI.takeScreenshot()
+
+WebUI.click(findTestObject('Object Repository/Language/logout/Page_Customer Assignment/logout_button'))
+
+WebUI.maximizeWindow()
+WebUI.takeScreenshot()
+
+//WebUI.delay(2)
+//WebUI.verifyImagePresent(findTestObject('imagetest'))
+
+
+
+//WebUI.takeScreenshot()
 
 
 

@@ -35,7 +35,7 @@ public class mailuserpassword2ndvaluedb {
 		String mailpassword = ""
 
 
-		sqlConnection.eachRow("select PASSWORD  from USERS  where ROWNUM =1 ORDER BY ID DESC") { row ->
+		sqlConnection.eachRow("SELECT * FROM (select PASSWORD FROM USERS ORDER BY ID DESC) WHERE ROWNUM = 1") { row ->
 
 			mailpassword = row [0]
 

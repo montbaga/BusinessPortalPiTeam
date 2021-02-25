@@ -32,12 +32,12 @@ public class DownloadManager {
 	public static File LastDownloadedFile() {
 		File downloadDirectory = new File(downloadPath);
 		File[] downloadedFiles = downloadDirectory.listFiles();
-				if(downloadedFiles == null || downloadedFiles.length == 0) {
+		if(downloadedFiles == null || downloadedFiles.length == 0) {
 			return null
-			
-			
 
-			
+
+
+
 		}
 	}
 }
