@@ -9,6 +9,10 @@
          <key>XPATH</key>
          <value>//span[@id='changesTab_2']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'changesTab_2' and (text() = 'Changes' or . = 'Changes')]</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>

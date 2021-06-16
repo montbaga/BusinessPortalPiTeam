@@ -17,6 +17,7 @@ public class mc2_uat_otp_db {
 		String otp = ""
 		//sqlConnection("delete * from tele2_mc2_message_order")
 		sqlConnection.eachRow("select ORIGINAL_PAYLOAD  from tele2_mc2_message_order where message_type = 'MFA_AUTHENTICATION_SMS_NL'  and created > CURRENT_TIMESTAMP -1/1440 order by created desc") { row ->
+			//sqlConnection.firstRow("select ORIGINAL_PAYLOAD from tele2_mc2_message_order order by created desc fetch first 1 rows only").with { row ->
 			CLOB clob = row [0]
 			otp = clob.getSubString( clob.position( "OTP", 300l)+27, 8)
 		}

@@ -17,8 +17,8 @@ public class ExecutingFirstQueryInMySql {
 
 
 		boolean flag = false
-
-		sqlConnection.eachRow("select login_name , calvi_role , calvi_id_new from users where login_name like '%userauto%'") { row ->
+		sqlConnection.firstRow("select login_name , calvi_role , calvi_id_new from users where login_name like '%USERAUTO%' order by id desc fetch first 1 rows only").with { row ->
+			//sqlConnection.eachRow("select login_name , calvi_role , calvi_id_new from users where login_name like '%USERAUTO%'") { row ->
 			println (row [0] + " - " + row [1] + " - " + row [2])
 			//println row [0]
 			//println row [1]

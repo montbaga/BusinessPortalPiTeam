@@ -28,7 +28,10 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/div_Wrdg Zu Qkrx_rt-td'))
 
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('Object Repository/Page_Services/td_Zakelijk Mobiel 4G_id_3__3_1_1_3_1_4'))
+
 
 WebUI.delay(2)
 

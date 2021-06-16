@@ -6,11 +6,15 @@
    <elementGuidId>18fd4b4e-8d40-4211-9783-f8cc494904af</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@href = 'javascript:;' and (text() = ' CMDB report (all products)' or . = ' CMDB report (all products)')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//a[@id='id_3__3_3_b_1-a']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -27,7 +31,7 @@
       <value>javascript:;</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>

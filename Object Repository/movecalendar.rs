@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>//div[@id='_z_0-ry']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = '_z_0-ry']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

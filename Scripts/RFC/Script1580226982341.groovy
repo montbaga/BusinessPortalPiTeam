@@ -65,9 +65,9 @@ WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/a_Dashboard'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/span_0'))
+WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/Page_Welcome to Business Portal/newincidents'))
 
-WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/button_Current network outages'))
+WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/currennetworkoutages'))
 
 WebUI.delay(1)
 
@@ -127,7 +127,7 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl('https://mijn.uat.tele2zakelijk.nl/')
 
-WebUI.setText(findTestObject('Object Repository/OUTAGESINUAT/input_VOOR ZAKELIJK_username-hidden'), 'abel.fokkinga@tele2.com')
+WebUI.setText(findTestObject('Object Repository/OUTAGESINUAT/input_VOOR ZAKELIJK_username-hidden'), 'jelle.van-wijk@tele2.com')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/OUTAGESINUAT/input_VOOR ZAKELIJK_password'), 'tE+PEiSUqqgo23gg3D+W7A==')
 
@@ -147,9 +147,9 @@ WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/a_Dashboard'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/span_0'))
+WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/Page_Welcome to Business Portal/newincidents'))
 
-WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/button_Current network outages'))
+WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/currennetworkoutages'))
 
 WebUI.delay(1)
 
@@ -212,7 +212,7 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl('https://mijn.uat.tele2zakelijk.nl/')
 
-WebUI.setText(findTestObject('Object Repository/OUTAGESINUAT/input_VOOR ZAKELIJK_username-hidden'), 'abel.fokkinga@tele2.com')
+WebUI.setText(findTestObject('Object Repository/OUTAGESINUAT/input_VOOR ZAKELIJK_username-hidden'), 'jelle.van-wijk@tele2.com')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/OUTAGESINUAT/input_VOOR ZAKELIJK_password'), 'tE+PEiSUqqgo23gg3D+W7A==')
 
@@ -232,9 +232,9 @@ WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/a_Dashboard'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/span_0'))
+WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/Page_Welcome to Business Portal/newincidents'))
 
-WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/button_Current network outages'))
+WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/currennetworkoutages'))
 
 WebUI.delay(1)
 

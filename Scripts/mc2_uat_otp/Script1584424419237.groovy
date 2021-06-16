@@ -17,8 +17,8 @@ import internal.GlobalVariable as GlobalVariable
 import com.mysql.jdbc.*
 import groovy.sql.Sql as Sql
 
-String otp = CustomKeywords.'mc2_uat_otp.mc2_uat_otp_db.connection'('jdbc:oracle:thin:@//nott.corp.tele2.com:1521/sdtest', 
-    'MC2_UAT_DATA', 'test')
+String otp = CustomKeywords.'mc2_uat_otp.mc2_uat_otp_db.connection'('jdbc:oracle:thin:@//nluu-mc2db01.itservices.lan:1521/MC2UAT', 
+    'MC2_UAT_DATA', 'MC2_UAT_DATA')
 
 println(otp)
 

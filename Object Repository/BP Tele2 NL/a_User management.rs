@@ -9,8 +9,16 @@
          <key>XPATH</key>
          <value>//ul[@id='settings-topmenu']/li[5]/a</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;settings-topmenu&quot;)/li[@class=&quot;item hover&quot;]/a[1][count(. | //*[@href = '/zk/user_mgmt/userContactSearch' and (text() = '
+           User management' or . = '
+           User management')]) = count(//*[@href = '/zk/user_mgmt/userContactSearch' and (text() = '
+           User management' or . = '
+           User management')])]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -35,7 +43,7 @@
            User management</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

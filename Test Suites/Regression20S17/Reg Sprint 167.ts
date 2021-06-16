@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Reg Sprint 159</name>
+   <name>Reg Sprint 167</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -96,18 +96,6 @@
       <testCaseId>Test Cases/CustomerDetails</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>8ba491c6-9dad-44ba-a969-7f50dfe9c714</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Changes</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>2247f175-5418-484c-8b3e-708058d61506</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Incidents</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>1bb10f43-6eaa-4e46-8f2d-34ca4d4c44b1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -142,6 +130,18 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/HostedVoice_TSC</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1ed98f04-8ff2-4168-b2d2-4adec550b98f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Change</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>94e64645-c1bd-427c-a5e8-1cac70262d45</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Incident</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>a1b9c41b-e411-47f2-8ca3-84c4ee3fd5e3</guid>

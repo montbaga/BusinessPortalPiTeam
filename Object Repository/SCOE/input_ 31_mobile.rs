@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>//input[@id='mat-input-11']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;mat-input-11&quot;)[count(. | //*[@name = 'mobile' and @id = 'mat-input-11' and @placeholder = 'Mobile' and @ref_element = 'Object Repository/SCOE/frame_concat(bodypThis page uses frames but_e8b9d4']) = count(//*[@name = 'mobile' and @id = 'mat-input-11' and @placeholder = 'Mobile' and @ref_element = 'Object Repository/SCOE/frame_concat(bodypThis page uses frames but_e8b9d4'])]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -24,7 +28,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>mat-input-element mat-form-field-autofill-control ng-untouched ng-invalid ng-dirty</value>
+      <value>mat-input-element mat-form-field-autofill-control ng-pristine ng-invalid ng-touched</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -90,7 +94,7 @@
       <value>mat-error-17</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

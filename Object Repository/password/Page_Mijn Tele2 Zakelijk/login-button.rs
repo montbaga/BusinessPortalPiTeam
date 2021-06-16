@@ -6,11 +6,15 @@
    <elementGuidId>079d7fe3-02df-4818-b688-8d57a1fa82e8</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'button' and @id = 'login-button']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//input[@id='login-button']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

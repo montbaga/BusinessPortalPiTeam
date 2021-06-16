@@ -9,8 +9,24 @@
          <key>XPATH</key>
          <value>//div[@id='cdk-step-content-0-1']/form/mat-form-field[7]/div/div/div[2]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'mat-input-infix mat-form-field-infix' and (text() = '
+                
+                
+                
+                
+                
+            Mobile *' or . = '
+                
+                
+                
+                
+                
+            Mobile *') and @ref_element = 'Object Repository/SCOE/frame_concat(bodypThis page uses frames but_e8b9d4']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -20,7 +36,7 @@
       <value>div</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>

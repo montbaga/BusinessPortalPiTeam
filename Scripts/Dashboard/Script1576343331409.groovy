@@ -45,29 +45,29 @@ WebUI.takeScreenshot()
 //WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/span_BU4'))
 //WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/span_Account Incidents Changes and Orders Overview'))
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/span_Incidents'))
+WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/Page_Welcome to Business Portal/newchange'))
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/span_Changes'))
+WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/Page_Welcome to Business Portal/newincidents'))
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/span_Orders'))
+WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/Page_Welcome to Business Portal/neworders'))
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/input_Filter_tabBox_3_4_1_3'))
+WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/Page_Welcome to Business Portal/casefilter'))
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/span_Order type'))
+WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/Page_Welcome to Business Portal/ordertypefilter'))
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/span_Action needed'))
+WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/actionneededfilter'))
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/span_Status'))
+WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/Page_Welcome to Business Portal/statusfilter'))
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/button_Clear filters'))
+WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/clearfilterbutton'))
 
-WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/button_Active'))
+//WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/button_Active'))
 
 Thread.sleep(2000)
 
-WebUI.click(findTestObject('Page_Welcome to Business Portal/button_Export'))
+WebUI.click(findTestObject('Page_Welcome to Business Portal/exportbutton'))
 
-WebUI.click(findTestObject('Page_Welcome to Business Portal/a_Excel 2007'))
+WebUI.click(findTestObject('Page_Welcome to Business Portal/excel2007'))
 
 WebUI.delay(2)
 

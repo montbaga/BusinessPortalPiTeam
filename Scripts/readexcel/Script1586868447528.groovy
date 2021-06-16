@@ -56,7 +56,7 @@ Thread.sleep(2000)
 
 WebUI.click(findTestObject('Page_Welcome to Business Portal/button_Export'))
 
-WebUI.click(findTestObject('Page_Welcome to Business Portal/a_Excel 2007'))
+WebUI.click(findTestObject('null'))
 
 WebUI.delay(10)
 

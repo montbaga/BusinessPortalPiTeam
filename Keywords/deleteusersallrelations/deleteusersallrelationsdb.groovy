@@ -32,12 +32,14 @@ public class deleteusersallrelationsdb {
 		def sqlConnection = Sql.newInstance(url,user,password)
 
 
-		sqlConnection("delete from contact_function_profile where ctt_id in (select id from contacts where USR_ID in (select  id from users where login_name like '%userauto%'))")
-		sqlConnection("delete from account_manager where ctt_id in (select id from contacts where USR_ID in (select  id from users where login_name like'%userauto%'))")
-		sqlConnection("delete from unit_permission where ctt_id in (select id from contacts where USR_ID in (select  id from users where login_name like'%userauto%'))")
-		sqlConnection("delete from contacts_one_login where PRIMARY_CONTACT in (select ID from contacts where EMAIL like '%userauto%')")
-		sqlConnection("delete from contacts where USR_ID in (select  id from users where login_name like '%userauto%')")
-		sqlConnection("delete from password_history where USR_ID in (select  id from users where login_name like'%userauto%')")
-		sqlConnection("delete from users where login_name like'%userauto%'")
+		sqlConnection("delete from contact_function_profile where ctt_id in (select id from contacts where USR_ID in (select  id from users where login_name like '%USERAUTO%'))")
+		sqlConnection("delete from account_manager where ctt_id in (select id from contacts where USR_ID in (select  id from users where login_name like'%USERAUTO%'))")
+		sqlConnection("delete from unit_permission where ctt_id in (select id from contacts where USR_ID in (select  id from users where login_name like'%USERAUTO%'))")
+		sqlConnection("delete from log_entry where ctt_id in (select id from contacts where USR_ID in (select  id from users where login_name like'%USERAUTO%'))")
+		sqlConnection("delete from contacts_one_login where PRIMARY_CONTACT in (select ID from contacts where EMAIL like '%USERAUTO%')")
+		
+		sqlConnection("delete from contacts where USR_ID in (select  id from users where login_name like '%USERAUTO%')")
+		sqlConnection("delete from password_history where USR_ID in (select  id from users where login_name like'%USERAUTO%')")
+		sqlConnection("delete from users where login_name like'%USERAUTO%'")
 	}
 }

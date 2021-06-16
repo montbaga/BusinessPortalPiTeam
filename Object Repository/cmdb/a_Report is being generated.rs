@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='id_3__3_3_b_1-a']</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Service'])[3]/following::a[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

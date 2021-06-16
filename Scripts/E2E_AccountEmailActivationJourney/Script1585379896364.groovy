@@ -121,7 +121,7 @@ WebUI.setText(findTestObject('Object Repository/SCOE/input_Middle Name_lastName'
 
 WebUI.setText(findTestObject('Object Repository/SCOE/input_ 31_phone'), GlobalVariable.orgphone)
 
-WebUI.click(findTestObject('Object Repository/SCOE/div_Mobile'))
+//WebUI.click(findTestObject('Object Repository/SCOE/div_Mobile'))
 
 WebUI.setText(findTestObject('Object Repository/SCOE/input_ 31_mobile'), GlobalVariable.orgmobile)
 

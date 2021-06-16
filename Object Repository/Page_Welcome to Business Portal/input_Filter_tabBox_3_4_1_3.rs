@@ -7,10 +7,14 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='tabBox_3_4_1_3']</value>
+         <value>//input[@id='changes.filter.caseNumber']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'changes.filter.caseNumber' and @placeholder = 'Case number' and @type = 'text']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -24,7 +28,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>tabBox_3_4_1_3</value>
+      <value>changes.filter.caseNumber</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <matchCondition>equals</matchCondition>
       <name>placeholder</name>
       <type>Main</type>
-      <value>Case number, order number</value>
+      <value>Case number</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -59,7 +63,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='tabBox_3_4_1_3']</value>
+      <value>//input[@id='changes.filter.caseNumber']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

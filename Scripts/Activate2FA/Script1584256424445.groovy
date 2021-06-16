@@ -22,13 +22,13 @@ import groovy.sql.Sql as Sql
 
 String selectAll = Keys.chord(Keys.CONTROL, 'a')
 
-String charSet = 'abcdefghijklmno'
-
 String charSet1 = '1234567890'
 
 int length = 5
 
 int length1 = 8
+
+String charSet = 'abcdefghijklmno'
 
 GlobalVariable.password = 'LEGoy6uz!!'
 
@@ -168,25 +168,21 @@ WebUI.setText(findTestObject('Object Repository/Page_Mijn Tele2 Zakelijk/input_V
 WebUI.click(findTestObject('Object Repository/Page_Mijn Tele2 Zakelijk/input_VOOR ZAKELIJK_login-button'))
 
 WebUI.delay(2)
+
 WebUI.takeScreenshot()
 
-WebUI.delay(15)
+//WebUI.delay(15)
 
-
-
-String otp = CustomKeywords.'mc2_uat_otp.mc2_uat_otp_db.connection'('jdbc:oracle:thin:@//nott.corp.tele2.com:1521/sdtest', 
-  'MC2_UAT_DATA', 'test')
+String otp = CustomKeywords.'mc2_uat_otp.mc2_uat_otp_db.connection'('jdbc:oracle:thin:@//nluu-mc2db01.itservices.lan:1521/MC2UAT', 
+    'MC2_UAT_DATA', 'MC2_UAT_DATA')
 
 //temporary db
-
 //String otp = CustomKeywords.'mc2_uat_otp.mc2_uat_otp_db.connection'('jdbc:oracle:oci:@//pcadb-mc2-p.corp.tele2.com:1522:mc2prf',
-  //'MC2_UAT_DATA', 'test')
+//'MC2_UAT_DATA', 'test')
 //jdbc:oracle:oci:@//localhost:1521:SID
+WebUI.delay(5)
 
-WebUI.delay(15)
 println(otp)
-
-
 
 WebUI.setText(findTestObject('Object Repository/password/Page_Mijn Tele2 Zakelijk/OTPcode'), otp)
 
@@ -194,8 +190,9 @@ WebUI.takeScreenshot()
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/password/Page_Mijn Tele2 Zakelijk/login-button'))
 
+WebUI.click(findTestObject('Object Repository/password/Page_Mijn Tele2 Zakelijk/login-button'))
+//WebUI.click(findTestObject('Object Repository/otplogin/otplogin'))
 WebUI.delay(3)
 
 WebUI.takeScreenshot()

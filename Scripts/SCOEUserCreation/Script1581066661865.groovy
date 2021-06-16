@@ -111,7 +111,7 @@ try {
 
     WebUI.setText(findTestObject('Object Repository/SCOE/input_ 31_phone'), GlobalVariable.orgphone)
 
-    WebUI.click(findTestObject('Object Repository/SCOE/div_Mobile'))
+    //WebUI.click(findTestObject('Object Repository/SCOE/div_Mobile'))
 
     WebUI.setText(findTestObject('Object Repository/SCOE/input_ 31_mobile'), GlobalVariable.orgmobile)
 
@@ -150,7 +150,7 @@ try {
     //println(AccountName)
     WebUI.click(findTestObject('Object Repository/SCOE/back-button'))
 
-    WebUI.delay(10)
+    WebUI.delay(20)
 
     WebUI.setText(findTestObject('Object Repository/SCOE/CustomerName'), GlobalVariable.organisationName)
 
@@ -162,7 +162,7 @@ try {
    
 	WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/div_Wrdg Zu Qkrx_rt-td'))
 	
-
+	WebUI.delay(5)
     WebUI.click(findTestObject('Object Repository/Page_Customer Assignment/a_Settings'))
 
     WebUI.click(findTestObject('Object Repository/Page_Customer Assignment/a_User management'))
@@ -212,7 +212,7 @@ try {
 
     //WebUI.click(findTestObject('Object Repository/Page_User Management/span_Invoice overview old invoices'))
     WebUI.click(findTestObject('Object Repository/Page_User Management/button_Save'))
-	
+	WebUI.delay(10)
 	String successmessage1 = WebUI.getText(findTestObject('Object Repository/SCOE/contactupdatesuccess'))
 	
 	println(successmessage1)

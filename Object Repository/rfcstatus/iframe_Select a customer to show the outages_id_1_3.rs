@@ -14,7 +14,7 @@
          <value>//*[@id = 'id_1_3' and @src = '/bpui/en/outage/900153242']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

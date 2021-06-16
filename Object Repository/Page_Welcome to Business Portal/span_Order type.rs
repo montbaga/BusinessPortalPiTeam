@@ -7,10 +7,14 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[@id='tabBox_3_4_1_5_1_1']</value>
+         <value>//span[@class='selectbox-placeholder' and (text() = 'Order type' or . = 'Order type')]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'selectbox-placeholder' and (text() = 'Order type' or . = 'Order type')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,9 +26,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>class</name>
       <type>Main</type>
-      <value>tabBox_3_4_1_5_1_1</value>
+      <value>selectbox-placeholder</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +49,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//span[@id='tabBox_3_4_1_5_1_1']</value>
+      <value>//span[@class='selectbox-placeholder' and (text() = 'Order type' or . = 'Order type')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

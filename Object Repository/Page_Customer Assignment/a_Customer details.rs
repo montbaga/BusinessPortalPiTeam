@@ -9,11 +9,17 @@
          <key>XPATH</key>
          <value>//ul[@id='settings-topmenu']/li[4]/a</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[@href = '/zk/customerdetails' and (text() = '
+           Customer details' or . = '
+           Customer details')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>

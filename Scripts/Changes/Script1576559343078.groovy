@@ -15,6 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil
 
 //for loop starts here to capture two Changes for BP
 //for (int i = 0; i < 50; i++) {
@@ -87,6 +88,7 @@ String message = WebUI.getText(findTestObject('Object Repository/Page_Services/d
 WebUI.takeScreenshot()
 
 println(message)
+KeywordUtil.markPassed("Passed")
 
-WebUI.click(findTestObject('Object Repository/Page_Services/div_Mobile BHjePhKberrZ 457 IBdRylB_closer'))
+not_run: WebUI.click(findTestObject('Object Repository/Page_Services/div_Mobile BHjePhKberrZ 457 IBdRylB_closer'))
 

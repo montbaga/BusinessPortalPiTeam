@@ -65,9 +65,9 @@ WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/a_Dashboard'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/span_0'))
+WebUI.click(findTestObject('Object Repository/Page_Welcome to Business Portal/Page_Welcome to Business Portal/newincidents'))
 
-WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/button_Current network outages'))
+WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/currennetworkoutages'))
 
 WebUI.refresh()
 

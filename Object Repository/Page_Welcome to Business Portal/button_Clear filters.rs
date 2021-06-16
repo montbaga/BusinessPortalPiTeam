@@ -9,8 +9,12 @@
          <key>XPATH</key>
          <value>//button[@id='tabBox_3_4_1_b']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'button' and @id = 'tabBox_3_4_1_b' and (text() = 'Clear filters' or . = 'Clear filters')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

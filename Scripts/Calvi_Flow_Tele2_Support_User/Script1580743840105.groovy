@@ -53,9 +53,9 @@ println(GlobalVariable.fixednumber)
 
 println(GlobalVariable.mobilenumber)
 
-WebUI.callTestCase(findTestCase('deleteusersallreelations'), [:], FailureHandling.STOP_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('deleteusersallreelations'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('db_commit'), [:], FailureHandling.STOP_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('db_commit'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.openBrowser('')
 
@@ -89,8 +89,12 @@ WebUI.click(findTestObject('Object Repository/BP Tele2 NL/input_VOOR ZAKELIJK_lo
     WebUI.delay(3)
 //}
 
-  WebUI.click(findTestObject('Object Repository/BP Tele2 NL/a_Settings'))
-  WebUI.click(findTestObject('Object Repository/BP Tele2 NL/a_User management'))
+  //WebUI.click(findTestObject('Object Repository/BP Tele2 NL/a_Settings'))
+  //WebUI.click(findTestObject('Object Repository/BP Tele2 NL/a_User management'))
+	
+	WebUI.click(findTestObject('Object Repository/Page_Customer Assignment/a_Settings'))
+	
+	WebUI.click(findTestObject('Object Repository/Page_Customer Assignment/a_User management'))
    WebUI.click(findTestObject('Object Repository/BP Tele2 NL/div_Select all customers'))
    WebUI.setText(findTestObject('Object Repository/input_Select all customers_layoutPane_2_2_1_2_1_1'), 'BP User Management for Tele2 NL')
    WebUI.delay(2)

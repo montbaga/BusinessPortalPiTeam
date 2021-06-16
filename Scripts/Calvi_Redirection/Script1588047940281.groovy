@@ -77,9 +77,13 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/OUTAGESINUAT/div_Wrdg Zu Qkrx_rt-td'))
 
-WebUI.click(findTestObject('Object Repository/linkingusers/Page_Customer Assignment/a_Settings'))
+//WebUI.click(findTestObject('Object Repository/linkingusers/Page_Customer Assignment/a_Settings'))
 
-WebUI.click(findTestObject('Object Repository/linkingusers/Page_Customer Assignment/a_User management'))
+//WebUI.click(findTestObject('Object Repository/linkingusers/Page_Customer Assignment/a_User management'))
+
+WebUI.click(findTestObject('Object Repository/Page_Customer Assignment/a_Settings'))
+
+WebUI.click(findTestObject('Object Repository/Page_Customer Assignment/a_User management'))
 
 //WebUI.click(findTestObject('Object Repository/Page_User Management/div_Select all customers'))
 //WebUI.click(findTestObject('Object Repository/Page_User Management/span_Arts En Zorg'))
